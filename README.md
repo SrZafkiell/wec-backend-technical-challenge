@@ -35,6 +35,25 @@ This API was made with the purpose of applying to a backend developer role at WE
 - Docker
 -  `pip install -r requirements.txt`
 ---
+## Installation & run (docker) < 2 Steps
+1. **Clone**:
+```bash
+git  clone  https://github.com/SrZafkiell/wec-backend-technical-challenge
+cd  wec-backend-technical-challenge
+```
+2. **Create image, container and start it**:
+```bash
+docker compose up
+```
+**Usefull/Common Commands**
+| Command | What it does |
+|--------|----------|
+| ``docker compose up`` | Build & start the container |
+| `docker compose up -d` | Start in background (detached) |
+| `docker compose down` | Stop and remove containers |
+| `docker compose logs -f` | Watch logs in real-time |
+| `docker compose build --no-cache` | Rebuild from scratch |
+
 ## Installation & run (local)
 
 1. **Clone**:
