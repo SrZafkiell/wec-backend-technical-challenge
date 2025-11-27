@@ -12,9 +12,9 @@ services:
     environment:
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONUNBUFFERED=1
-
-    env_file:
-      - .env
+      - JWT_SECRET=testsecretkey
+      - JWT_EXPIRE_MINUTES=15
+      - TINYDB_PATH=data/db.json
 
     volumes:
       - ./data:/app/data
