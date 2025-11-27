@@ -1,0 +1,84 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments - the container has its own Python!
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution/packaging files
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy cache
+.mypy_cache/
+
+# These are personal settings and don't belong in the container
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Version control files aren't needed in the running container
+.git/
+.gitignore
+.gitattributes
+
+# Don't include Docker files inside the container (inception problems!)
+Dockerfile
+Dockerfile.*
+docker-compose*.yml
+.docker/
+.dockerignore
+
+# Anyone with access to the image can extract these files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Nice to have locally, but bloats the container unnecessarily
+README.md
+README*.md
+docs/
+*.md
+
+# Tests are typically run separately, not in production containers
+tests/
+test/
+*_test.py
+test_*.py
+
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
