@@ -164,7 +164,7 @@ Protect other endpoints using `Authorization: Bearer <token>`.
 - [x] Global error middleware (recommended) — describe file path.
 - [x] Data validation (e.g., number > 0).
 - [x] Roles or custom claims in JWT.
-- [ ] Dockerfile and docker-compose.
+- [x] Dockerfile and docker-compose.
 - [x] DELETE /numbers/{id}, PUT /numbers/{id}, GET /numbers/{id}.
 - [x] `/stats` endpoint with `count`, `avg`, `max`, `min`.
 - [x] `/logout` with token invalidation.
